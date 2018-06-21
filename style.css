@@ -1,14 +1,19 @@
 html{
 	height: 100%;
+	/*background: linear-gradient(#000000, #000000, transparent)*/
+	
 }
 
 body{
 
-background: linear-gradient(#242222, #635d5d, transparent), url("https://images.unsplash.com/photo-1509718443690-d8e2fb3474b7?ixlib=rb-0.3.5&s=00348587d342e2ee61133a326e4a7c20&auto=format&fit=crop&w=750&q=80");
-background-size: cover; 
-/*box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.8); */
-background-position: center;
-font-family: Lato;
+	background: linear-gradient(#242222, #635d5d, transparent), url("https://images.unsplash.com/photo-1509718443690-d8e2fb3474b7?ixlib=rb-0.3.5&s=00348587d342e2ee61133a326e4a7c20&auto=format&fit=crop&w=750&q=80");
+	background-size: cover; 
+	background-position: center;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Lato;
+    height: 500px;
+    color: white;
 }
 
 .navbar-nav>li>a:hover{
@@ -66,3 +71,50 @@ hr{
 	border-top: 1px solid #f8f8f8;
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 }
+
+.fas fa-angle-right{
+	size:5x;
+}
+
+.aboutme {
+	margin-top: 20%;
+}
+
+.myphoto{
+	height: 100%;
+	width: 80%;
+	border: 1px solid black;
+	/*border-radius: 30%;*/
+	/*margin-left:20%;*/
+	/*margin-top: 5%;*/
+	position: relative;
+}
+
+.jumbotron{
+	padding: 0.7em 1em;
+}
+
+.jumbotron p{
+	padding: 1em 0.6em;
+	font-size: 1.4em;
+	text-align: justify;
+}
+
+.projects{
+
+	margin-top: 20%;
+}
+
+.aboutme p{
+	color:white;
+}
+
+.customh1{
+	font-family: Permanent Marker;
+
+}
+
+.navbar{
+	margin-bottom: 0px;
+}
+

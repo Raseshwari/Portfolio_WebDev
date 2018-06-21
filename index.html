@@ -5,10 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" class="image">
 
 	<nav class="navbar navbar-default">
 		<div class="container">
@@ -26,30 +27,60 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
-					<!-- <li><a href="#">HOME</a></li> -->
-					<li><a href="#">SKILLS</a></li>
-					<li><a href="#">RESEARCH</a></li>
-					<li><a href="#">PROJECTS</a></li>
-					<li><a href="#">FIND ME</a></li>
+					<!-- <li><a href="#aboutme">ABOUT ME</a></li> -->
+					<li><a href="#skills">SKILLS</a></li>
+					<li><a href="#research">RESEARCH</a></li>
+					<li><a href="#projects">PROJECTS</a></li>
+					<li><a href="#findme">FIND ME</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
-<div class="container">
 	<div class="row">
 		<div class="col-lg-12">
 			<div id="content">
 				<h1>Raseshwari Pulle</h1>
-				<h3>4.5years of experience as Application Development Senior Analyst. Specializing in <strong>Web Development</strong> and <strong>Data Science</strong> <br> Currently seeking Co-op/Internship, Fall 2018</h3>
+				<h3><strong>4.5 years</strong> of experience as Application Development Senior Analyst. Specializing in <strong>Web Development</strong> and <strong>Data Science</strong> <br> Seeking Co-op/Internship, Fall 2018</h3>
 				<hr>
-				<button class="btn btn-default btn-lg"><i class="fas fa-paw"></i> Get Started!</button>
+				<button class="btn btn-default btn-lg">Learn More <i class="fas fa-angle-right"></i></button>
 			</div>
 		</div>
 	</div>
-</div>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+
+
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // goto the hashed content
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+
 </body>
 </html>
