@@ -1,0 +1,57 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("/w3images/mac.jpg");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+.fas fa-code{
+	size:5x;
+}
+
+.imgprop{
+	height:25px;
+	width:25px;
+}
+
+.w3-row-padding{
+	padding: 0 4px;
+}
+
+element.style{
+	padding: 50px 10px; 
+}
+
+.fas fa-angle-right{
+	size:7x;
+}
+
+.w3-display-bottommiddle{
+	left:50%;
+	bottom:10%;
+}
+
+.w3-display-container{
+	position:relative;
+	background: linear-gradient(#242222, #635d5d, transparent), url("https://images.unsplash.com/photo-1509718443690-d8e2fb3474b7?ixlib=rb-0.3.5&s=00348587d342e2ee61133a326e4a7c20&auto=format&fit=crop&w=750&q=80");
+	background-size: cover; 
+	background-position: center;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+img{
+	height: 150px;
+	width:150px;
+	border-radius: 50%;
+	/*transform: rotate(20deg);*/
+}
